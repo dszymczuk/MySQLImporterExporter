@@ -12,12 +12,17 @@ Parameters to provide:
 * pathToExport/partToImportFile 
 * verbose(optional)
 
+Remember call params flow:
+-------
+> nameScript whatIWantToDo WhichDatabeses WhereTo/WhereFrom ShowOutput
+
 Export example:
 -------
-
-> ./mysqlimex.sh export db1,db2 /mysql/backup verbose
-
+```sh
+./mysqlimex.sh export db1,db2 /mysql/backup verbose
+```
 Import example:
 -------
-
-> ./mysqlimex.sh import db1 /mysql/backup/db1.sql verbose
+```sh
+./mysqlimex.sh import db1 /mysql/backup/db1.sql verbose
+```

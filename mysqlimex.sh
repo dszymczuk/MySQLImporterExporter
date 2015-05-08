@@ -19,7 +19,9 @@ verbose=$4
 host='localhost'
 user='user'
 password='password'
-fileName='_mysqlDump.sql'
+
+NOW=$(date +"%m-%d-%Y-%H:%M")
+fileName='_'"$NOW"'_mysqlDump.sql'
 
 
 if [ "$action" == 'export' ] 
